@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 // TODO: ใส่รหัสนักศึกษาที่ค่าสตริงนี้
-const studentId = 'Student ID';
+const studentId = '630710038';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -54,11 +54,154 @@ class _HomePageState extends State<HomePage> {
 
   _buildQuizView() {
     // TODO: build UI
-    return Center(child: Text('TODO: build UI'));
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(20.0),
+          border: Border.all(color: Colors.black),
+        ),
+        child: Column(
+          children: [
+            Text('Question 15 of 30'),
+            Container(
+              margin: EdgeInsets.fromLTRB(30, 30, 30, 30),
+              decoration: BoxDecoration(
+                color: Colors.greenAccent[400],
+                borderRadius: BorderRadius.circular(10.0),
+                border: Border.all(color: Colors.black),
+              ),
+              child: Text('What is the chemical symbol for  the element oxygen?'),
+            ),
+            Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                  padding: EdgeInsets.only(left: 180,right: 180),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10.0),
+                    border: Border.all(color: Colors.black),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        // padding: EdgeInsets.only(left: 60,right: 60),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10.0),
+                          border: Border.all(color: Colors.black),
+                        ),
+                        child: Text('A'),
+                      ),
+                      Text('O'),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                  padding: EdgeInsets.only(left: 180,right: 180),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10.0),
+                    border: Border.all(color: Colors.black),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        // padding: EdgeInsets.only(left: 60,right: 60),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10.0),
+                          border: Border.all(color: Colors.black),
+                        ),
+                        child: Text('B'),
+                      ),
+                      Text('Ox'),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                  padding: EdgeInsets.only(left: 180,right: 180),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10.0),
+                    border: Border.all(color: Colors.black),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        // padding: EdgeInsets.only(left: 60,right: 60),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10.0),
+                          border: Border.all(color: Colors.black),
+                        ),
+                        child: Text('C'),
+                      ),
+                      Text('O2'),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(12.0),
+                  padding: EdgeInsets.only(left: 163,right: 163),
+                  decoration: BoxDecoration(
+                    color: Colors.lightBlueAccent.shade100,
+                    borderRadius: BorderRadius.circular(10.0),
+                    border: Border.all(color: Colors.black),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        // padding: EdgeInsets.only(left: 60,right: 60),
+                        decoration: BoxDecoration(
+                          color: Colors.pink,
+                          borderRadius: BorderRadius.circular(10.0),
+                          border: Border.all(color: Colors.black),
+                        ),
+                        child: Text('D'),
+                      ),
+                      Text('Oxygen'),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   _buildButtonPanel() {
     // TODO: build UI
-    return Center(child: Text('TODO: build UI'));
+    return Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Container(
+            padding: EdgeInsets.only(left: 60,right: 60),
+            decoration: BoxDecoration(
+              color: Colors.pink,
+              borderRadius: BorderRadius.circular(10.0),
+              border: Border.all(color: Colors.black),
+            ),
+            child: Text('<'),
+          ),
+          Container(
+            padding: EdgeInsets.only(left: 60,right: 60),
+            decoration: BoxDecoration(
+              color: Colors.greenAccent,
+              borderRadius: BorderRadius.circular(10.0),
+              border: Border.all(color: Colors.black),
+            ),
+            child: Text('>'),
+          ),
+        ],
+      ),
+    );
   }
 }
